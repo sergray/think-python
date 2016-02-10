@@ -6,7 +6,7 @@ counter = 0
 
 def is_abecedarian():
 	#import pdb; pdb.set_trace()
-	fin = open('words.txt')
+	fin = open('../words.txt')
 	for line in fin:
 	    word = line.strip()
 	    alphabetical(word)

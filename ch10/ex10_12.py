@@ -11,7 +11,7 @@ def is_reverse_pair(word):
 
 def read_from_words():
 	reverse_pair_words = []
-	fin = open('words.txt')
+	fin = open('../words.txt')
 	for line in fin:
 		word = line.strip()
 		if is_reverse_pair(word) == True:

@@ -27,7 +27,7 @@ def is_triple_double(word_to_check):
 
 def find_triple_double():
 	global count_all
-	fin = open('words.txt')
+	fin = open('../words.txt')
 	for line in fin:
 	    word = line.strip()
 	    is_triple_double(word)

@@ -7,7 +7,7 @@ def words_as_dict():
 	words_dict = {}
 	dict_value = 1
 
-	fin = open('words.txt')
+	fin = open('../words.txt')
 	for line in fin:
 		word = line.strip()
 		words_dict[dict_value] = word

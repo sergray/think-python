@@ -7,7 +7,7 @@ import time
 
 def list_of_words_with_append():
 	words_list = []
-	fin = open('words.txt')
+	fin = open('../words.txt')
 	for line in fin:
 	    word = line.strip()
 	    words_list.append(word)
@@ -15,7 +15,7 @@ def list_of_words_with_append():
 
 def list_of_words_with_addition():
 	words_list = []
-	fin = open('words.txt')
+	fin = open('../words.txt')
 	for line in fin:
 		word = line.strip()
 		#import pdb; pdb.set_trace()

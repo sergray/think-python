@@ -1,5 +1,5 @@
 def has_no_e():
-	fin = open('words.txt')
+	fin = open('../words.txt')
 	counter = 0 # count total words
 	count_e = 0 # count words without 'e' letter
 
