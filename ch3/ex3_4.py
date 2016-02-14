@@ -12,20 +12,21 @@ function four times, passing the value as a parameter. There should be only two 
 the body of this function, not four.
 """
 
-def do_twice(f_function, a_value):
-	f_function(a_value)
-	f_function(a_value)
-
 def print_twice(str_param):
-	print str_param
-	print str_param
+    print str_param
+    print str_param
 
-do_twice(print_twice, 'spam')
-print "----------"
+
+def do_twice(f_function, a_value):
+    f_function(a_value)
+    f_function(a_value)
 
 
 def do_four(func_obj, func_value):
-	do_twice(func_obj, func_value)
-	do_twice(func_obj, func_value)
+    do_twice(func_obj, func_value)
+    do_twice(func_obj, func_value)
 
-do_four(print_twice, 'spam')
+
+if __name__ == '__main__':
+    do_four(print_twice, 'spam')
+    do_twice(print_twice, 'spam')
